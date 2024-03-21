@@ -11,7 +11,6 @@ const CustomFooter = styled.footer`
 
 export const Footer = () => {
   return (
-    <CustomFooter className="bg-dark">
       <div className="container">
         <span className="text-white">
           &#169;
@@ -27,7 +26,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-    </CustomFooter>
+    
   );
 };
 

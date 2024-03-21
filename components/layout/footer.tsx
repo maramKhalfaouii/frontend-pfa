@@ -1,22 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const CustomFooterWrapper = styled.footer`
+const CustomFooter = styled.footer`
   position: absolute;
   bottom: 0;
   width: 100%;
   line-height: 60px;
   background-color: #f5f5f5;
-
-  &.bg-dark {
-    background-color: #343a40; /* Adjust background color as needed */
-    color: #ffffff; /* Adjust text color as needed */
-  }
 `;
 
-export const Footer = ({ className }) => {
+export const Footer = () => {
   return (
-    <CustomFooterWrapper className={className}>
+    <CustomFooter className="bg-dark">
       <div className="container">
         <span className="text-white">
           &#169;
@@ -32,7 +27,7 @@ export const Footer = ({ className }) => {
           </a>
         </div>
       </div>
-    </CustomFooterWrapper>
+    </CustomFooter>
   );
 };
 

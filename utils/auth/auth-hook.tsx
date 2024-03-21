@@ -2,7 +2,7 @@ import React, { useContext, createContext } from "react";
 import { AuthToken } from "./auth-token";
 
 // @ts-ignore
-export const authContext = createContext();
+export const authContext = createContext<AuthToken | null>(null);
 
 type ProviderAuthProps = {
   auth: AuthToken;
@@ -11,7 +11,7 @@ type ProviderAuthProps = {
 
 // Hook for child components to get the auth object ...
 // ... and re-render when it changes.
-export const useAuth = (): AuthToken => {
+export const useAuth = (): AuthToken | null => {
   return useContext(authContext);
 };
 

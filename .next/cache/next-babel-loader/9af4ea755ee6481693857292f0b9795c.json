@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * The options used to configure the API.\n */\n\n/**\n * The default configuration for the app.\n */\nexport const DEFAULT_API_CONFIG = {\n  url: process.env.API_URL,\n  timeout: 30000\n};","map":null,"metadata":{},"sourceType":"module"}

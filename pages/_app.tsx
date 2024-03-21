@@ -1,7 +1,7 @@
 import App from "next/app";
 import Router from "next/router";
 import NProgress from "nprogress";
-import { Header, Footer } from "components/layout";
+import { Header } from "components/layout";
 import { ErrorBoundary } from "components/error-boundary";
 import { ProvideAuth, AuthToken, TOKEN_STORAGE_NAME } from "utils/auth";
 import { Container } from "reactstrap";
@@ -61,7 +61,6 @@ export default class CustomApp extends App<CustomAppProps> {
             <Component {...pageProps} />
           </Container>
         </ErrorBoundary>
-        <Footer />
       </ProvideAuth>
     );
   }
